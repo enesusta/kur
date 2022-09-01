@@ -1,3 +1,36 @@
+### Docker
+
+You can mapping the ports whatever you want. The most important thing about github-trending-crawler port mapping is that github-trending-crawler runs on `5000 HTTP` port. You must consider this during configure your mapping.
+
+- With CLI
+
+```bash
+docker run -d -p 5000:5000 enesusta/kur:0109202
+```
+
+- With docker-compose
+
+Let's look at this sample.
+
+`docker-compose.yml`
+
+```yml
+version: '3'
+
+services:
+  kur:
+    container_name: kur
+    image: enesusta/kur:0109202
+    ports:
+    - 5000:5000
+```
+
+Then:
+
+```bash
+docker-compose up -d
+```
+
 Sample Response
 
 ```json
