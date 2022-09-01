@@ -1,6 +1,6 @@
 ### Docker
 
-You can mapping the ports whatever you want. The most important thing about github-trending-crawler port mapping is that github-trending-crawler runs on `5000 HTTP` port. You must consider this during configure your mapping.
+You can mapping the ports whatever you want. The most important thing about kur port mapping is that kur runs on `5000 HTTP` port. You must consider this during configure your mapping. 
 
 - With CLI
 
